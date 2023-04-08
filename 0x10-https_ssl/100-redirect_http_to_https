@@ -47,6 +47,6 @@ frontend ehoneah-frontend-https
 
 backend ehoneah-backend
         balance roundrobin
-        server 149138-web-01 34.203.38.54:80 check
-        server 149138-web-02 52.204.97.205:80 check
+        server 149138-web-01 34.207.62.74:80 check
+        server 149138-web-02 34.229.69.105:80 check
 
