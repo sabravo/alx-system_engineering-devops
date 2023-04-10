@@ -19,4 +19,4 @@ then
 elif [ "$#" == 2 ]
 then
 	display_info "$1" "$2"
-fi#
+fi
