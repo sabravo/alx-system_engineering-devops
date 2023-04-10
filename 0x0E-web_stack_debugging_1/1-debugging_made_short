@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# debugging nginx (service (init) must say that nginx is not running)
-sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
-service nginx restart
-pkill -o nginx
+# script that debug and configures nginx server to listen to port 80
+apt-get -y install socat | tee /dev/null > /dev/null 2>&1
+sudo socat TCP-LISTEN:80,fork TCP:localhost:8080 > /dev/null 2>&1 &
